@@ -28,12 +28,6 @@ def convertir(frase: str):
 variable = convertir(mi_frase)
 print(variable)
 
-
-    
-    
-    
-    
-
 # def convertir(frase):
     
 #     listaFinal = []
