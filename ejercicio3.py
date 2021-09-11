@@ -1,4 +1,5 @@
 from functools import reduce
+from operator import add    
 
 """=> Ejercicio 3:
     Realiza una fn aculado, que devuelva el valor acumulado 
@@ -17,8 +18,11 @@ from functools import reduce
 mis_numeros = [5, 4, 1]
 
 def acumulado():
-   
-    suma = reduce(lambda x, y: x + y, mis_numeros)
-    print(suma + 100)     
+
+    suma = reduce(add, mis_numeros, 100)
+    return suma
+
+result_final = acumulado()
+
+print(result_final)   
  
-acumulado()  

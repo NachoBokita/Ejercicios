@@ -15,14 +15,33 @@
 
 mi_frase = input("Ingresá un texto a elección: ")
 
-def convertir(frase):
+def mayus(palabra: str):
+    return palabra.upper()
+
+def convertir(frase: str):
+    frase_separada = frase.split(" ")
     
-    listaFinal = []
-    list = frase.split()
+    frase_terminada = list(map(mayus, frase_separada))
+    return frase_terminada
+
+
+variable = convertir(mi_frase)
+print(variable)
+
+
     
-    for i in list:
-        listaFinal.append(i.upper())
     
-    print(listaFinal)
     
-convertir(mi_frase)  
+    
+
+# def convertir(frase):
+    
+#     listaFinal = []
+#     list = frase.split()
+    
+#     for i in list:
+#         listaFinal.append(i.upper())
+    
+#     print(listaFinal)
+    
+# convertir(mi_frase)  

@@ -19,14 +19,25 @@
 numero = int(input("Ingrese un número: "))
 frutas = ["Melón", "Sandia", "Pera", "Banana", "Tomate", "Manzana"]
 
-def mostrar(frutas, numero):
-   
-    frutas_numeros = {}
-   
-    for i in frutas:
-        frutas_numeros[numero] = i
-        numero = numero + 1
+
+
+def mostrar(lista_frutas, numerito):
+    
+    for i, elemento in enumerate(lista_frutas, numerito):
+        print(i, " --> ", elemento)
         
-    print(frutas_numeros) 
+        
+mostrar(frutas, numero)
+
+
+#     frutas_numeros = {}
+   
+#     for i in frutas:
+#         frutas_numeros[numero] = i
+#         numero = numero + 1
+        
+#     print(frutas_numeros) 
           
-mostrar(frutas, numero)        
+# mostrar(frutas, numero)        
+
+
